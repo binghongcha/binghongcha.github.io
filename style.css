@@ -1,0 +1,508 @@
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{font-style:italic;font-weight:bold}
+
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+
+@font-face {
+  font-family: 'Canela Web';
+  src: url('Canela-Light-Web.woff2') format('woff2'),
+  url('Canela-Light-Web.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  }
+
+body {
+  font-feature-settings: "liga", "kern";
+  }
+
+small {
+        font-size: 80%;
+        font-weight: bold;
+        font-family: initial;
+        color:#32d3be !important;
+        vertical-align: 1px ;
+    
+}
+
+hr {
+  animation-delay: 0.3s;
+  border-top: 1px solid #ECEFF1;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.footer {
+  position: fixed;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background-color: rgba(236, 239, 241, 0.9);
+   height: 40px;
+   -webkit-animation-delay: 1s; /* Safari 4.0 - 8.0 */
+       animation-delay: 1s;
+}
+
+.only-md {
+  display: none;  
+  }
+
+  .nobig {
+    display: inline;  
+    }
+  
+.last {
+
+margin-bottom: 150px;
+
+}
+.shadow {
+  border-radius: 15px;
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.shadow::after {
+  content: "";
+    border-radius: 15px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.shadow:hover {
+   -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+.shadow:hover::after {
+  opacity: 1;
+}
+
+.opacita { visibility: hidden;}
+/* Prevents :hover from triggering in the gaps between items */
+
+.opacita > * { visibility: visible;}
+/* Brings the child items back in, even though the parent is `hidden` */
+
+.icons {
+  -webkit-animation-duration: 1.4s!important; /* Safari 4.0 - 8.0 */
+  animation-duration: 1.4s!important;
+  -webkit-animation-delay: 0.9s; /* Safari 4.0 - 8.0 */
+  animation-delay: 0.9s;}
+
+}
+
+/*
+.opacita > * { transition: opacity 350ms ease-in-out 100ms; }
+ Makes the fades smooth with a slight delay to prevent jumps as the mouse moves between items */
+
+.opacita:hover > * { opacity: 0.2; }
+/* Fade out all items when the parent is hovered */
+
+.opacita > *:hover { opacity: 1; }
+/* Fade in the currently hovered item */
+    
+#particles-js canvas{
+  opacity: 0.4;
+max-width:500px;
+    position: fixed;
+}
+
+
+#particles-js{
+
+  padding-right: 0px;
+      padding-left: 0px;
+    height: 100%;
+    position: absolute;
+
+    left: 0;
+    top: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  z-index: -10;
+}
+
+.container {
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.blocco {
+  margin-top: 20px;
+  margin-top: 40px;
+
+}
+
+.connect {
+margin-bottom: 30px;
+
+}
+/* Typography */
+
+h2 {
+  font-family: 'Canela Web';
+  font-weight:  300;
+color: #324148;
+    font-size: 31px;
+    line-height: 131%;
+   text-align: left;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    margin-top: 20%;
+    padding-bottom: 40px;
+}
+
+h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 13px;
+  color: #232d32;
+  text-transform: uppercase;
+  text-align: left;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+  letter-spacing: 0.5px;
+
+}
+h5 {
+	padding-top: 15px;
+	text-align: left;
+	font-size:10px;
+  line-height: 14px;
+  color: #475c66;
+  opacity: 50%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-weight: 400;
+
+}
+
+.footer h5{
+padding-left: 45px;
+color: #90A4AE;
+}
+h6 {
+  font-size: 11px;
+  color: #475c66;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  padding-top: 30px;  
+  -webkit-animation-duration: 1s!important;
+  animation-duration: 1s!important;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+
+}
+
+.name h6 {
+
+  padding-left: 15px;
+
+}
+p {
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-align: left;
+
+
+  font-weight: 300;
+  padding-bottom: 20px;
+  color: #475c66;
+  line-height: 155%;
+
+}
+
+hr {
+  animation-delay: 0.3s;
+  border-top: 1px solid #ECEFF1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.myself {
+
+max-width: 40%;
+border-radius: 50%;
+margin: 50px; 
+float: center;
+}
+
+
+
+
+::selection {
+  background: #eaeff2;
+}
+
+
+a:active {
+   text-decoration: none;
+
+}
+
+
+
+
+/* links */
+h2 > a {
+  position: relative;
+  color: #232d32;
+  text-decoration: none;
+  cursor:pointer;
+
+  letter-spacing: -0.1px;
+
+}
+
+h2 > a:visited {
+  position: relative;
+  color:#232d32;
+  text-decoration: none;
+
+}
+h2 > a:hover {
+  color: #324148;
+    text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+
+}
+h2 >  a:active {
+      color: #324148;
+    text-decoration: none;
+
+}
+h2 > a:before {
+  content: "";
+  position: absolute;
+  width: 106%;
+  height: 30px;
+  bottom: 0;
+  left: -2px;
+  background-color: #ECEFF1;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+   z-index: -1;
+
+}
+
+h2 > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  z-index: -1;
+
+
+}
+
+p > a {
+  position: relative;
+  color: #232d32;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: smaller;
+  cursor:pointer;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+
+p > a:visited {
+  position: relative;
+  color:#232d32;
+  text-decoration: none;
+
+}
+p > a:hover {
+  color: #324148;
+    text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+
+}
+p >  a:active {
+      color: #324148;
+    text-decoration: none;
+
+}
+p > a:before {
+  content: "";
+  position: absolute;
+  width: 106%;
+  height: 10px;
+  bottom: 0;
+  left: -2px;
+  background-color: #ECEFF1;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+   z-index: -1;
+
+}
+
+p > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  z-index: -1;
+
+
+}
+
+/** animation **/
+
+h6 {  
+  -webkit-animation-duration: 1s!important;
+  animation-duration: 1s!important;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.content {  
+  -webkit-animation-duration: 1s!important;
+  animation-duration: 1s!important;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+
+h4 {  
+  -webkit-animation-duration: 1s!important;
+  animation-duration: 1s!important;
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+hr {
+  -webkit-animation-duration: 1s!important;
+  animation-duration: 1s!important;
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+
+p {
+  -webkit-animation-duration: 1s!important;
+  animation-duration: 1s!important;
+  -webkit-animation-delay: 1.1s;
+  animation-delay: 1.1s;
+}
+
+.late h4{
+  -webkit-animation-duration: 1s!important;
+  animation-duration: 1s!important;
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+
+@media screen and (min-width: 800px)  {
+
+  #particles-js canvas{
+    opacity: 0.5;
+  max-width:250px;
+      position: fixed;
+  }
+  h2{
+ margin-top: 13%;
+  font-size: 40px;
+  line-height: 141%;
+  letter-spacing: 0.2px;
+padding-right:130px;
+
+}
+h6{
+  font-size: 13px;
+  font-weight: 500;
+
+}
+p{
+font-size: 16px;
+font-weight: 300;
+line-height: 145%;
+}
+.only-md {
+  display: inline;  
+  }
+
+.nobig {
+  display: none;  
+  }
+
+
+}
+
+
+
+@media screen and (min-width: 1800px)  {
+  
+  #particles-js canvas{
+    opacity: 0.6;
+  max-width:500px;
+      position: fixed;
+  }
+  p{
+    font-size: 18px;
+    }
+  .container {
+
+    width: 65%;
+
+  }
+  h2{
+
+     font-size: 60px;
+     line-height: 161%;
+     letter-spacing: 0.2px;
+     padding-bottom: 70px;
+
+   
+   }
+   .blocco p{
+     font
+padding-right: 40px;
+
+    }
+    
+
+    hr {
+ 
+      margin-top: 15px;
+      margin-bottom:25px;
+    }
+    
+    .connect {
+      margin-bottom: 60px;
+  }
+}
