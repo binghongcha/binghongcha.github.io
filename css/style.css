@@ -429,6 +429,15 @@ p {
   animation-delay: 1.4s;
 }
 
+img {
+
+  -webkit-animation-duration: 1s!important;
+  animation-duration: 1s!important;
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+
+}
+
 @media screen and (min-width: 800px)  {
 
   #particles-js canvas{
